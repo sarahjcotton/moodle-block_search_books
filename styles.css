@@ -1,0 +1,62 @@
+.block_search_books .searchform {text-align: center;}
+.block_search_books .invisiblefieldset {display: block;}
+#searchbooksquery{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 75%;
+}
+table#search_results{
+	width:100% !important;
+}
+
+img#results_icon{
+	padding-bottom:9px;
+}
+
+img#book_search_icon{
+	padding-bottom:5px;
+}
+
+.chkLabel {
+  width:100%;
+}
+
+.chkLabel label {
+    display: block;
+    padding-left: 1.4em;
+    text-indent: -1.4em;
+    font-family: Arial,verdana,sans-serif;
+    font-size: 13px;
+}
+
+p#intro{
+  line-height: 1.5em;
+  font-family: Arial,verdana,sans-serif;
+  font-size: 13px;
+}
+
+/* jQuery UI */
+#ui-id-2{
+      height: inherit !important;
+}
+
+.block .content h3 {
+    text-transform: none !important;
+    text-decoration: none !important;
+    outline:none;
+    color: #000 !important;
+    padding-left: 5px;
+}
+
+.ui-icon.iconClosed {
+    background:url('/theme/image.php?theme=solent2014&component=core&image=t%2Fcollapsed') no-repeat 0px;
+    background-size:16px;
+    width:16px;
+    height:16px;
+}
+.ui-icon.iconOpen {
+    background:url('/theme/image.php?theme=solent2014&component=core&image=t%2Fexpanded') no-repeat;
+    background-size:16px;
+    width:16px;
+    height:16px;
+}
