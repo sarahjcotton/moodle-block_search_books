@@ -36,13 +36,19 @@ class block_search_books extends block_base {
     function applicable_formats() {
         return (array('site-index' => true, 'course-view-weeks' => true, 'course-view-topics' => true));
     }
+	
+	function get_required_javascript() {
+        parent::get_required_javascript();
+ 
+        $this->page->requires->jquery();
+        $this->page->requires->jquery_plugin('ui');        
+    }
 
     function get_content() {
         global $CFG, $USER, $COURSE, $DB, $PAGE;
 //amendment added		
-		$PAGE->requires->css('/blocks/search_books/js/jquery-ui.css'); 
-		$PAGE->requires->js('/blocks/search_books/js/jquery-ui.js');    
-		$PAGE->requires->js('/blocks/search_books/js/checkbox.js'); 
+		 $PAGE->requires->css('/blocks/search_books/js/jquery-ui.css'); 	  
+		 $PAGE->requires->js('/blocks/search_books/js/checkbox.js'); 
 //end amendment added
 
         if ($this->content !== NULL) {
